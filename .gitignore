@@ -1,0 +1,11 @@
+# Node
+node_modules/
+
+# Build artifacts
+dist/
+
+# Package manager files
+*yarn-error.log
+
+# Editor directories and files
+.idea/

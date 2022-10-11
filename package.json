@@ -1,0 +1,36 @@
+{
+  "name": "spectacle.ts",
+  "version": "0.1.0",
+  "description": "A Discord API wrapper compatible with spec-tacles/gateway",
+  "keywords": [
+    "discord",
+    "api",
+    "wrapper",
+    "spectacles"
+  ],
+  "repository": "https://github.com/spectacle-ts/spectacle.ts",
+  "bugs": "https://github.com/spectacle-ts/spectacle.ts/issues",
+  "author": "Sammy#1001",
+  "license": "GPLv3",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "prepack": "yarn build"
+  },
+  "dependencies": {
+    "@spectacles/brokers": "^0.9.3",
+    "discord-api-types": "^0.37.12"
+  }
+}
