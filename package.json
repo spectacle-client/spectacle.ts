@@ -11,7 +11,7 @@
   "repository": "https://github.com/spectacle-ts/spectacle.ts",
   "bugs": "https://github.com/spectacle-ts/spectacle.ts/issues",
   "author": "Sammy#1001",
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -27,10 +27,16 @@
   ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "prepack": "yarn build"
+    "prepack": "yarn build",
+    "publish": "npm publish"
   },
   "dependencies": {
     "@spectacles/brokers": "^0.9.3",
-    "discord-api-types": "^0.37.12"
+    "discord-api-types": "^0.37.12",
+    "ioredis": "^5.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.4",
+    "typescript": "^4.8.4"
   }
 }
